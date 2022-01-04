@@ -1,0 +1,28 @@
+{
+    "name": "ceddyg/clara-pim",
+    "description": "Pim feature for Clara.",
+    "keywords": ["laravel", "clara", "pim", "product"],
+    "authors": [
+        {
+            "name": "CeddyG"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2",
+        "illuminate/support": "^6.0|^7.0",
+        "ceddyg/clara-library": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CeddyG\\ClaraPim\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CeddyG\\ClaraPim\\PimServiceProvider"
+            ]
+        }
+    }
+}
