@@ -203,7 +203,7 @@
                                     </ul>
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="variant_tab_1">
-                                            @include('admin.variant.form')
+                                            @include('clara-pim::admin.variant.form')
                                         </div>
                                         <!-- /.tab-pane -->
                                         <div class="tab-pane" id="variant_tab_2">

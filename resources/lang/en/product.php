@@ -18,5 +18,6 @@ return [
     'type_product_0' => 'Product',
     'type_product_1' => 'Service',
     'created_at' => 'Created at',
-    'updated_at' => 'Updated at'
+    'updated_at' => 'Updated at',
+    'list' => 'List'
 ];

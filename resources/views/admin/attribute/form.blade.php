@@ -37,7 +37,7 @@
                         @if(isset($oItem))
                             {!! BootForm::select(__('clara-pim::attribute-category.attribute_category'), 'fk_attribute_category')
                                 ->class('select2 form-control')
-                                ->options([$oItem->fk_attribute_category => $oItem->attribute_category->created_at])
+                                ->options([$oItem->fk_attribute_category => $oItem->attribute_category->name])
                                 ->data([
                                     'url-select'    => route('api.admin.attribute-category.select'), 
                                     'url-create'    => route('admin.attribute-category.create'),
