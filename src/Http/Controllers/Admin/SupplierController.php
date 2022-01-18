@@ -10,9 +10,9 @@ class SupplierController extends ContentManagerController
 {
     public function __construct(SupplierRepository $oRepository)
     {
-        $this->sPath            = 'admin/supplier';
+        $this->sPath            = 'clara-pim::admin/supplier';
         $this->sPathRedirect    = 'admin/supplier';
-        $this->sName            = __('supplier.supplier');
+        $this->sName            = __('clara-pim::supplier.supplier');
         
         $this->oRepository  = $oRepository;
         $this->sRequest     = 'CeddyG\ClaraPim\Http\Requests\SupplierRequest';

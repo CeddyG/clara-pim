@@ -32,9 +32,9 @@ class ProductController extends ContentManagerController
         PriceCategoryRepository $oPriceCategoryRepository
     )
     {
-        $this->sPath            = 'admin/product';
+        $this->sPath            = 'clara-pim::admin/product';
         $this->sPathRedirect    = 'admin/product';
-        $this->sName            = __('product.product');
+        $this->sName            = __('clara-pim::product.product');
         
         $this->oRepository                      = $oRepository;
         $this->oAttributeCategoryRepository     = $oAttributeCategoryRepository;

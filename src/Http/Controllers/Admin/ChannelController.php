@@ -17,9 +17,9 @@ class ChannelController extends ContentManagerController
 
     public function __construct(ChannelRepository $oRepository)
     {
-        $this->sPath            = 'admin/channel';
+        $this->sPath            = 'clara-pim::admin/channel';
         $this->sPathRedirect    = 'admin/channel';
-        $this->sName            = __('channel.channel');
+        $this->sName            = __('clara-pim::channel.channel');
         
         $this->oRepository  = $oRepository;
         $this->sRequest     = 'CeddyG\ClaraPim\Http\Requests\ChannelRequest';

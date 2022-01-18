@@ -17,9 +17,9 @@ class ImageVariantController extends ContentManagerController
 
     public function __construct(ImageVariantRepository $oRepository)
     {
-        $this->sPath            = 'admin/image-variant';
+        $this->sPath            = 'clara-pim::admin/image-variant';
         $this->sPathRedirect    = 'admin/image-variant';
-        $this->sName            = __('image-variant.image_variant');
+        $this->sName            = __('clara-pim::image-variant.image_variant');
         
         $this->oRepository  = $oRepository;
         $this->sRequest     = 'CeddyG\ClaraPim\Http\Requests\ImageVariantRequest';

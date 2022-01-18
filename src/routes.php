@@ -80,7 +80,7 @@ Route::group(['prefix' => config('clara.product-category.route.api.prefix'), 'mi
 });
 
 //Product image
-Route::get('product-image/{sSize}/{sSlug}', 'ProductImageController@show');
+Route::get('product-image/{sSize}/{sSlug}', 'CeddyG\ClaraPim\Http\Controllers\ProductImageController@show');
 
 //Supplier
 Route::group(['prefix' => config('clara.supplier.route.web-admin.prefix'), 'middleware' => config('clara.supplier.route.web-admin.middleware')], function()
@@ -102,7 +102,7 @@ Route::group(['prefix' => config('clara.variant.route.web-admin.prefix'), 'middl
 
 Route::group(['prefix' => config('clara.variant.route.api.prefix'), 'middleware' => config('clara.variant.route.api.middleware')], function()
 {
-    Route::resource('variant', \CeddyG\ClaraPim\Http\Controllers\Admin\VariantController::class, ['names' => 'api.admin.variant']);
     Route::get('variant/index', 'CeddyG\ClaraPim\Http\Controllers\Admin\VariantController@index')->name('api.admin.variant.index');
 	Route::get('variant/select', 'CeddyG\ClaraPim\Http\Controllers\Admin\VariantController@selectAjax')->name('api.admin.variant.select');
+    Route::resource('variant', \CeddyG\ClaraPim\Http\Controllers\Admin\VariantController::class, ['names' => 'api.admin.variant']);
 });

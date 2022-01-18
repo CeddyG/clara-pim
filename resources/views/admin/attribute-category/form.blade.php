@@ -34,7 +34,7 @@
                         {!! BootForm::open()->action(route('admin.attribute-category.store'))->post() !!}
                     @endif
 
-                    {!! BootForm::viewTabPane('admin.attribute-category.text', ClaraLang::getActiveLang()) !!}
+                    {!! BootForm::viewTabPane('clara-pim::admin.attribute-category.text', ClaraLang::getActiveLang()) !!}
 
                     {!! BootForm::submit('Envoyer', 'btn-primary')->addClass('pull-right') !!}
 

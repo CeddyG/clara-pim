@@ -18,9 +18,9 @@ class AttributeController extends ContentManagerController
 
     public function __construct(AttributeRepository $oRepository)
     {
-        $this->sPath            = 'admin/attribute';
+        $this->sPath            = 'clara-pim::admin/attribute';
         $this->sPathRedirect    = 'admin/attribute';
-        $this->sName            = __('attribute.attribute');
+        $this->sName            = __('clara-pim::attribute.attribute');
         
         $this->oRepository  = $oRepository;
         $this->sRequest     = 'CeddyG\ClaraPim\Http\Requests\AttributeRequest';

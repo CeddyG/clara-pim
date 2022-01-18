@@ -24,7 +24,7 @@
                         {!! BootForm::open()->action(route('admin.product-category.store'))->post() !!}
                     @endif
 
-                    {!! BootForm::viewTabPane('admin.product-category.text', ClaraLang::getActiveLang()) !!}
+                    {!! BootForm::viewTabPane('clara-pim::admin.product-category.text', ClaraLang::getActiveLang()) !!}
 
                     {!! BootForm::submit('Envoyer', 'btn-primary')->addClass('pull-right') !!}
 

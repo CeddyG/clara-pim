@@ -17,9 +17,9 @@ class ProductCategoryController extends ContentManagerController
 
     public function __construct(ProductCategoryRepository $oRepository)
     {
-        $this->sPath            = 'admin/product-category';
+        $this->sPath            = 'clara-pim::admin/product-category';
         $this->sPathRedirect    = 'admin/product-category';
-        $this->sName            = __('product-category.product_category');
+        $this->sName            = __('clara-pim::product-category.product_category');
         
         $this->oRepository  = $oRepository;
         $this->sRequest     = 'CeddyG\ClaraPim\Http\Requests\ProductCategoryRequest';

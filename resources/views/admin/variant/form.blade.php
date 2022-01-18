@@ -28,6 +28,6 @@
         </div>
     </div>
     <div class="col col-md-6">
-        {!! BootForm::viewTabPane('admin.variant.text', ClaraLang::getActiveLang()) !!}
+        {!! BootForm::viewTabPane('clara-pim::admin.variant.text', ClaraLang::getActiveLang()) !!}
     </div>
 </div>

@@ -11,7 +11,8 @@
     "require": {
         "php": ">=7.2",
         "illuminate/support": "^6.0|^7.0",
-        "ceddyg/clara-library": "^4.0"
+        "ceddyg/clara-library": "^4.0",        
+        "intervention/image": "^2.5"
     },
     "autoload": {
         "psr-4": {

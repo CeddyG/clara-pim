@@ -24,7 +24,7 @@
                         {!! BootForm::open()->action(route('admin.channel.store'))->post() !!}
                     @endif
 
-                    {!! BootForm::viewTabPane('admin.channel.text', ClaraLang::getActiveLang()) !!}
+                    {!! BootForm::viewTabPane('clara-pim::admin.channel.text', ClaraLang::getActiveLang()) !!}
                     {!! BootForm::text(__('clara-pim::channel.code_channel'), 'code_channel') !!}
 
                     {!! BootForm::submit('Envoyer', 'btn-primary')->addClass('pull-right') !!}

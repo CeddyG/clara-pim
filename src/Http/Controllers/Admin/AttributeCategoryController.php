@@ -18,9 +18,9 @@ class AttributeCategoryController extends ContentManagerController
 
     public function __construct(AttributeCategoryRepository $oRepository)
     {
-        $this->sPath            = 'admin/attribute-category';
+        $this->sPath            = 'clara-pim::admin/attribute-category';
         $this->sPathRedirect    = 'admin/attribute-category';
-        $this->sName            = __('attribute-category.attribute_category');
+        $this->sName            = __('clara-pim::attribute-category.attribute_category');
         
         $this->oRepository  = $oRepository;
         $this->sRequest     = 'CeddyG\ClaraPim\Http\Requests\AttributeCategoryRequest';

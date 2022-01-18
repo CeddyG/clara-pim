@@ -121,7 +121,7 @@
                             ]) !!}
                         @endif
 
-                        {!! BootForm::viewTabPane('admin.product.text', ClaraLang::getActiveLang()) !!}
+                        {!! BootForm::viewTabPane('clara-pim::admin.product.text', ClaraLang::getActiveLang()) !!}
                         {!! BootForm::text(__('clara-pim::product.reference_product'), 'reference_product') !!}
                         {!! BootForm::BtnGroup(__('clara-pim::product.type_product'), 'type_product', [['label' => __('clara-pim::product.type_product_0'), 'value' => 0], ['label' => __('clara-pim::product.type_product_1'), 'value' => 1]]) !!}
 
@@ -306,7 +306,7 @@
                                 <h4 class="modal-title">{{ __('clara-pim::image-variant.image_variant') }}</h4>
                             </div>
                             <div class="modal-body">
-                                {!! BootForm::viewTabPane('admin.image-variant.text', ClaraLang::getActiveLang()) !!}
+                                {!! BootForm::viewTabPane('clara-pim::admin.image-variant.text', ClaraLang::getActiveLang()) !!}
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary pull-left" data-dismiss="modal">{{ __('clara::general.close') }}</button>

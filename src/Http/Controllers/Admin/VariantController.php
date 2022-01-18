@@ -17,9 +17,9 @@ class VariantController extends ContentManagerController
     
     public function __construct(VariantRepository $oRepository)
     {
-        $this->sPath            = 'admin/variant';
+        $this->sPath            = 'clara-pim::admin/variant';
         $this->sPathRedirect    = 'admin/variant';
-        $this->sName            = __('variant.variant');
+        $this->sName            = __('clara-pim::variant.variant');
         
         $this->oRepository  = $oRepository;
         $this->sRequest     = 'CeddyG\ClaraPim\Http\Requests\VariantRequest';

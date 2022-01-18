@@ -2,6 +2,8 @@
 
 namespace CeddyG\ClaraPim\Http\Controllers;
 
+use App\Http\Controllers\Controller;
+
 use Image;
 use CeddyG\ClaraPim\Utils\Convert;
 use CeddyG\ClaraPim\Repositories\ImageVariantTextRepository;

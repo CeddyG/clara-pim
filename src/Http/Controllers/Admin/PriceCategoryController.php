@@ -17,9 +17,9 @@ class PriceCategoryController extends ContentManagerController
 
     public function __construct(PriceCategoryRepository $oRepository)
     {
-        $this->sPath            = 'admin/price-category';
+        $this->sPath            = 'clara-pim::admin/price-category';
         $this->sPathRedirect    = 'admin/price-category';
-        $this->sName            = __('price-category.price_category');
+        $this->sName            = __('clara-pim::price-category.price_category');
         
         $this->oRepository  = $oRepository;
         $this->sRequest     = 'CeddyG\ClaraPim\Http\Requests\PriceCategoryRequest';

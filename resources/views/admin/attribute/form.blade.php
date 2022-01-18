@@ -53,7 +53,7 @@
                             ]) !!}
                         @endif
 
-                        {!! BootForm::viewTabPane('admin.attribute.text', ClaraLang::getActiveLang()) !!}
+                        {!! BootForm::viewTabPane('clara-pim::admin.attribute.text', ClaraLang::getActiveLang()) !!}
 
                     {!! BootForm::submit('Envoyer', 'btn-primary')->addClass('pull-right') !!}
 
